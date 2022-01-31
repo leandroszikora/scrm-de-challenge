@@ -2,7 +2,9 @@
 Questions: Could you propose a process to manage the development lifecycle? And the test and deployment automation?
 
 To organize the development inside the team, a classic giftflow could be used:
+
 <img src="./misc/gitflow-workflow.png">
+
 It allows to gain independence between the teams and isolation between the low and productive environments.
 
 So, if the team needs to add a new feature to a Spark job or to an Airflow DAG, these steps could be followed:
@@ -13,6 +15,7 @@ So, if the team needs to add a new feature to a Spark job or to an Airflow DAG, 
 5. If a hotfix has to be implemented, it can be directly done on the release branch and the change can be replicated on the remaining branches.
    
 Therefore, the pipeline of CI/CD would be as follows:
+
 <img src="./misc/pipeline_ci_cd.png">
 
 For the pipelines of CI/CD, different technologies can be used:
